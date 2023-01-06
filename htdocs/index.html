@@ -1,9 +1,26 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
+<!doctype html>
+<html lang="fr">
+<head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Milieu d'accueil pour enfant âgé de 0 à 3 ans">
+    <meta name="author" content="mabel.page">
+    <meta name="generator" content="amstram.be">
+
+    <meta property="og:url"           content="https://ileauxenfants.be/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="L'île aux enfants" />
+    <meta property="og:description"   content="Milieu d'accueil pour enfant âgé de 0 à 3 ans" />
+    <meta property="og:image"         content="https://fiscoge.be/assets/img/fiscoge-logo.jpg" />
+
+    <title>L'île aux enfants</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
@@ -21,8 +38,7 @@
       font-family: sans-serif;
     }
 
-    body > *{
-      width:100%;
+    *{
       text-align:center;
     }
 
@@ -31,11 +47,20 @@
 
     header{text-align:center;}
 
-    h1{font-size:4rem; font-weight:200; mari}
-    h2{font-size:2.7rem; font-weight:200;}
+    h1{font-size:2.3rem; font-weight:200; margin:1em 0;}
+    h2{font-size:1.7rem; font-weight:200;}
 
-    address{font-size:2rem; font-style:normal}
-    a{text-decoration:none; border-bottom:1px solid #5BC3E5; color:#5BC3E5;}
+    address{font-style:normal}
+    address span{display:block; margin-top:2em;}
+
+    a{
+      display:block;
+      margin-top:0.5em;
+      border-bottom:1px solid #5b4e99;
+      padding-bottom:2px;
+      text-decoration:none;
+      color:#5b4e99;
+    }
 
     img{
       max-width:100%;
@@ -43,30 +68,51 @@
     }
 
     div{
-      width:100%;
       flex-grow:3;
       display:flex;
       align-items: flex-end;
+      justify-content: center;
     }
 
-    </style>
+    @media(min-width:400px){
+      img{ width:400px;}
+      address{display:flex; gap:2em;align-items:end}
+      address span{margin:0;}
+    }
+    @media(min-width:550px){
+      img{ width:450px;}
+    }
+    @media(min-width:700px){
+      img{ width:500px;}
+    }
+
+  </style>
   </head>
   <body>
     <header>
       <h1 class="cursive">L'île aux enfants</h1>
-      <h2 class="cursive ">Milieu d'accueil<br/>pour enfant âgé de 0 à 3 ans</h2>
+      <h2 class="cursive">Milieu d'accueil<br/>pour enfant âgé de 0 à 3 ans</h2>
     </header>
 
     <address>
-      Rue des Champs 16
-      <br/>7190 Ecaussinnes
-      <br/>
-      <br/><a href="tel:+32067870545">+32 (0) 67 87 05 45</a>
-      <br/><a href="tel:+3267870517">+32 (0) 67 87 05 17</a>
+      <span>
+        <a href="https://www.google.be/maps/place/L'%C3%AEle+Aux+Enfants/@50.5470435,4.1912844,719m/data=!3m1!1e3!4m13!1m7!3m6!1s0x47c235bc1e0fc811:0x1f86bc3de9f4e5a8!2sRue+des+Champs+16,+7190+%C3%89caussinnes!3b1!8m2!3d50.5470435!4d4.1934731!3m4!1s0x47c23530093ece1d:0x8173d3a8e42e1413!8m2!3d50.5467013!4d4.1935554">
+        Rue des Champs 17</a>
+        <a href="https://www.google.be/maps/place/L'%C3%AEle+Aux+Enfants/@50.5470435,4.1912844,719m/data=!3m1!1e3!4m13!1m7!3m6!1s0x47c235bc1e0fc811:0x1f86bc3de9f4e5a8!2sRue+des+Champs+16,+7190+%C3%89caussinnes!3b1!8m2!3d50.5470435!4d4.1934731!3m4!1s0x47c23530093ece1d:0x8173d3a8e42e1413!8m2!3d50.5467013!4d4.1935554">
+        7190 Ecaussinnes</a>
+      </span>
+      <span>
+        <a href="tel:+3267870545">+32 (0) 67 87 05 45</a>
+        <a href="tel:+3267870517">+32 (0) 67 87 05 17</a>
+      </span>
+
     </address>
+
+    <a href="mailto:info@ileauxenfants.be">info @ ileauxenfants.be</a>
 
     <div>
       <img src="assets/ileauxenfants.png" alt="" class="radius">
     </div>
+
   </body>
 </html>
